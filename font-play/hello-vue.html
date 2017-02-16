@@ -100,8 +100,21 @@
 				}
 			})
 			
-		
-
+			
+			/**
+			 * vue实例
+			 */
+			
+			var data = {a:1}
+			var vm  = new Vue({
+				e1:'#example',
+				data:data
+			})
+			
+			console.log(vm.$data['a']);//1
+			
+			console.log(vm.$el===document.getElementById("example"))
+			
 		})
 	</script>
 
@@ -168,6 +181,7 @@
 			</ol>
 		</div>
 		
+		<div id="example"></div>
 	</body>
 
 </html>
